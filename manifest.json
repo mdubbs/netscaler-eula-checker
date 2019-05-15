@@ -1,0 +1,14 @@
+{
+	"manifest_version": 2,
+	"name": "Automatic NetScaler EULA Checker",
+	"version": "0.1.0",
+	"description": "Automatically check the \"I accept the Terms & Conditions\" box during Citrix NetScaler logins.",
+	"content_scripts": [
+		{
+			"matches": [
+				"<all_urls>"
+			],
+			"js": ["content.js"]
+		}
+	]
+}
